@@ -30,8 +30,8 @@ function horizontalDefinition( LayoutMode ) {
     return { width: this.x };
   };
 
-  Horizontal.prototype.resize = function() {
-    this.resizeVertical();
+  Horizontal.prototype.needsResizeLayout = function() {
+    return this.needsVerticalResizeLayout();
   };
 
   return Horizontal;
