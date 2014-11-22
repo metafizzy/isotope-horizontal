@@ -1,13 +1,13 @@
 {
   "name": "isotope-horizontal",
   "main": "horizontal.js",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "authors": [
     "David DeSandro"
   ],
   "description": "horizontal layout mode for Isotope",
   "dependencies": {
-    "isotope": ">=2.0.0-beta.9 <2.1"
+    "isotope": "2.0.x"
   },
   "keywords": [
     "isotope",
