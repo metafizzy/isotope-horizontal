@@ -1,8 +1,11 @@
 {
   "name": "isotope-horizontal",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "horizontal layoutMode for Isotope",
   "main": "horizontal.js",
+  "dependencies": {
+    "isotope-layout": "2.1.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
