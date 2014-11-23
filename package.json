@@ -1,0 +1,24 @@
+{
+  "name": "isotope-horizontal",
+  "version": "1.1.0",
+  "description": "horizontal layoutMode for Isotope",
+  "main": "horizontal.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/metafizzy/isotope-horizontal.git"
+  },
+  "keywords": [
+    "DOM",
+    "browser",
+    "isotope",
+    "isotope-layout-mode"
+  ],
+  "author": "David DeSandro / Metafizzy",
+  "bugs": {
+    "url": "https://github.com/metafizzy/isotope-horizontal/issues"
+  },
+  "homepage": "https://github.com/metafizzy/isotope-horizontal"
+}

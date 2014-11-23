@@ -11,3 +11,5 @@ $('#container').isotope({
 ## Install
 
 Install with [Bower](http://bower.io) `bower install isotope-horizontal`
+
+[Install with npm](https://www.npmjs.org/package/isotope-horizontal): `npm install isotope-horizontal`
