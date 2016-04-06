@@ -3,7 +3,7 @@
 See [docs for horizontal layout mode](http://isotope.metafizzy.co/layout-modes/horizontal.html)
 
 ``` js
-$('#container').isotope({
+$('.grid').isotope({
   layoutMode: 'horizontal'
 });
 ```

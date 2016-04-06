@@ -1,13 +1,12 @@
 {
   "name": "isotope-horizontal",
   "main": "horizontal.js",
-  "version": "1.1.2",
   "authors": [
     "Metafizzy"
   ],
   "description": "horizontal layout mode for Isotope",
   "dependencies": {
-    "isotope": ">=2.1.0 <2.3.0"
+    "isotope": ">=2.1 <4.0"
   },
   "keywords": [
     "isotope",

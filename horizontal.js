@@ -1,24 +1,44 @@
 /*!
  * horizontal layout mode for Isotope
- * v1.1.2
+ * v1.1.3
  * http://isotope.metafizzy.co/layout-modes/horizontal.html
  */
 
-( function( window ) {
+( function( window, factory ) {
+  // universal module definition
+  /* jshint strict: false */ /*globals define, module, require */
+  if ( typeof define === 'function' && define.amd ) {
+    // AMD
+    define( [
+        'isotope/js/layout-mode'
+      ],
+      factory );
+  } else if ( typeof exports === 'object' ) {
+    // CommonJS
+    module.exports = factory(
+      require('isotope-layout/js/layout-mode')
+    );
+  } else {
+    // browser global
+    factory(
+      window.Isotope.LayoutMode
+    );
+  }
 
-'use strict';
-
-function horizontalDefinition( LayoutMode ) {
+}( window, function factory( LayoutMode ) {
+  'use strict';
 
   var Horizontal = LayoutMode.create( 'horizontal', {
     verticalAlignment: 0
   });
 
-  Horizontal.prototype._resetLayout = function() {
+  var proto = Horizontal.prototype;
+
+  proto._resetLayout = function() {
     this.x = 0;
   };
 
-  Horizontal.prototype._getItemLayoutPosition = function( item ) {
+  proto._getItemLayoutPosition = function( item ) {
     item.getSize();
     var y = ( this.isotope.size.innerHeight - item.size.outerHeight ) *
       this.options.verticalAlignment;
@@ -27,34 +47,14 @@ function horizontalDefinition( LayoutMode ) {
     return { x: x, y: y };
   };
 
-  Horizontal.prototype._getContainerSize = function() {
+  proto._getContainerSize = function() {
     return { width: this.x };
   };
 
-  Horizontal.prototype.needsResizeLayout = function() {
+  proto.needsResizeLayout = function() {
     return this.needsVerticalResizeLayout();
   };
 
   return Horizontal;
 
-}
-
-if ( typeof define === 'function' && define.amd ) {
-  // AMD
-  define( [
-      'isotope/js/layout-mode'
-    ],
-    horizontalDefinition );
-} else if ( typeof exports === 'object' ) {
-  // CommonJS
-  module.exports = horizontalDefinition(
-    require('isotope-layout/js/layout-mode')
-  );
-} else {
-  // browser global
-  horizontalDefinition(
-    window.Isotope.LayoutMode
-  );
-}
-
-})( window );
+}));
