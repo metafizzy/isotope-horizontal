@@ -1,7 +1,7 @@
 /*!
  * horizontal layout mode for Isotope
- * v1.1.3
- * http://isotope.metafizzy.co/layout-modes/horizontal.html
+ * v2.0.0
+ * http://isotope.metafizzy.co/layout-modes/horiz.html
  */
 
 ( function( window, factory ) {
@@ -28,11 +28,11 @@
 }( window, function factory( LayoutMode ) {
   'use strict';
 
-  var Horizontal = LayoutMode.create( 'horizontal', {
+  var Horiz = LayoutMode.create( 'horiz', {
     verticalAlignment: 0
   });
 
-  var proto = Horizontal.prototype;
+  var proto = Horiz.prototype;
 
   proto._resetLayout = function() {
     this.x = 0;
@@ -55,6 +55,6 @@
     return this.needsVerticalResizeLayout();
   };
 
-  return Horizontal;
+  return Horiz;
 
 }));
