@@ -13,7 +13,7 @@
         'isotope/js/layout-mode'
       ],
       factory );
-  } else if ( typeof exports === 'object' ) {
+  } else if ( typeof module == 'object' && module.exports ) {
     // CommonJS
     module.exports = factory(
       require('isotope-layout/js/layout-mode')
