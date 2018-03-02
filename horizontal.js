@@ -1,7 +1,7 @@
 /*!
  * horizontal layout mode for Isotope
- * v2.0.0
- * http://isotope.metafizzy.co/layout-modes/horiz.html
+ * v2.0.1
+ * https://isotope.metafizzy.co/layout-modes/horiz.html
  */
 
 ( function( window, factory ) {
@@ -10,7 +10,7 @@
   if ( typeof define === 'function' && define.amd ) {
     // AMD
     define( [
-        'isotope/js/layout-mode'
+        'isotope-layout/js/layout-mode'
       ],
       factory );
   } else if ( typeof module == 'object' && module.exports ) {

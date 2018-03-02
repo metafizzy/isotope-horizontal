@@ -1,6 +1,6 @@
 # horizontal layout mode for Isotope
 
-See [docs for horizontal layout mode](http://isotope.metafizzy.co/layout-modes/horiz.html)
+See [docs for horizontal layout mode](https://isotope.metafizzy.co/layout-modes/horiz.html)
 
 ``` js
 $('.grid').isotope({

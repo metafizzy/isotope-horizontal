@@ -2,11 +2,11 @@
   "name": "isotope-horizontal",
   "main": "horizontal.js",
   "authors": [
-    "Metafizzy"
+    "David DeSandro"
   ],
   "description": "horizontal layout mode for Isotope",
   "dependencies": {
-    "isotope": ">=2.1 <4.0"
+    "isotope-layout": ">=2.1 <4.0"
   },
   "keywords": [
     "isotope",
